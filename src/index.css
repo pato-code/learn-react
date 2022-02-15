@@ -1,13 +1,98 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #553055;
+}
+.App{
+  background: #4c2a4c;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  color: #eee;
+}
+.navbar{
+  padding: 10px 20px;
+  text-align: center;
+  background: #6d3d6d
+}
+.navbar h1{
+  margin: 10px 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.book-list{
+  margin: 20px;
+  padding-bottom: 10px;
+}
+.book-list ul{
+  padding: 0;
+  list-style-type: none;
+}
+.book-list li{
+  background: #6d3d6d;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.book-list li:hover{
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.book-list .title{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+.book-list .author{
+  font-size: 0.9em;
+  color: #ddd;
+}
+.empty{
+  margin: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.book-form{
+  margin: 20px;
+  padding-bottom: 10px;
+}
+
+.book-form > .input{
+  background: #3c1f3c;
+  width: 100%; 
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  padding: 10px;
+  border: 0;
+  
+}
+
+.book-form > .submit{
+  background: #3c1f3c;
+  margin: 10px auto;
+  border: 0;
+  display: block;
+  padding: 6px 20px;
+  color: white; 
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.submit:hover{
+  background: #3c1f3c;
+  margin: 10px auto;
+  border: 0;
+  display: block;
+  padding: 6px 20px;
+  color: white; 
+  cursor: pointer;
+  transform: scale(1.1);
+  
 }
